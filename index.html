@@ -1,0 +1,85 @@
+<!doctype html>
+<html id="ng-app" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>toLowerCase directive for AngularJS</title>
+    <script type="text/javascript" src="//use.typekit.net/fcj5mrj.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <link rel="stylesheet" type="text/css" href="http://christinaholly.com/site/templates/css/main.css">
+    <style>
+      /* demo theme styles */
+      .container {
+        max-width: 600px;
+      }
+      .site-header .logo {
+        width: 100%;
+      }
+      .logo span, .logo img {
+        display: block;
+        float: left;
+      }
+      .logo span {
+        padding: 10px 0 0 10px;
+      }
+      .site-header {
+        padding: 5px 0;
+      }
+      .btn {
+        display: inline-block;
+        margin: 10px 0;
+      }
+      .btn:hover {
+        text-decoration: none;
+      }
+      code {
+        background: #e8e8e8;
+        font-family: 'consolas', monospace;
+        padding: 3px 5px;
+      }
+      @media (max-width: 767px) {
+        .site-header .logo span {
+          display: block;
+        }
+      }
+
+      /* demo styles */
+      input {
+        margin: 20px 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">
+          <img src="http://tinaciousdesign.com/images/td-logo.png" alt="Tinacious Design logo" width="50">
+          <span><b><a href="http://tinaciousdesign.com/">Tinacious Design</a></b> &ndash; plugin demos</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="site-content">
+      <div class="container" ng-controller="MainCtrl">
+        <h1 ng-cloak>{{post.title}}</h1>
+        <p>
+          This directive lowercases all of its input. If you type uppercase characters, they are automatically lower cased.
+        </p>
+        <input type="text" ng-model="sampleInput" placeholder="Add uppercase text..." to-lower-case>
+        <p>
+          <a href="http://github.com/tinacious/toLowerCase" class="btn">View on Github</a>
+        </p>
+      </div>
+
+    </section>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="to-lower-case.js"></script>
+
+    <script>
+      angular.module('myApp', ['toLowerCase'])
+        .controller('MainCtrl', function ($scope) {
+          $scope.sampleInput = '';
+        });
+    </script>
+  </body>
+</html>
