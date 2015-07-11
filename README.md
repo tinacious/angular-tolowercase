@@ -33,7 +33,7 @@ Add the directive as a dependency to your app:
 angular.module('myApp', ['toLowerCase'])
 ```
 
-Use on any directive like so—don't forget that you must use `ng-model` for this directive to work:
+Use on any input element like so—don't forget that you must use `ng-model` for this directive to work:
 
 ```html
 <input type="email" ng-model="emailAddress" to-lower-case />
