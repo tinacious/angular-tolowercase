@@ -2,7 +2,7 @@
   "name": "toLowerCase",
   "version": "0.0.1",
   "authors": [
-    "Tina Holly <tinacious.design@gmail.com>"
+    "Tina Holly <tinacious.design@gmail.com> (http://tinaciousdesign.com)"
   ],
   "description": "Lower cases the input",
   "main": "to-lower-case.js",
@@ -20,13 +20,5 @@
     "url": "git://github.com/tinacious/toLowerCase.git"
   },
   "license": "MIT",
-  "homepage": "http://tinaciousdesign.com",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "app/bower_components",
-    "test",
-    "tests"
-  ]
+  "homepage": "http://tinaciousdesign.com"
 }
