@@ -1,0 +1,32 @@
+{
+  "name": "toLowerCase",
+  "version": "0.0.1",
+  "authors": [
+    "Tina Holly <tinacious.design@gmail.com>"
+  ],
+  "description": "Lower cases the input",
+  "main": "to-lower-case.js",
+  "keywords": [
+    "toLowerCase",
+    "lower",
+    "case",
+    "ng-model",
+    "angular",
+    "angularjs",
+    "directive"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tinacious/toLowerCase.git"
+  },
+  "license": "MIT",
+  "homepage": "http://tinaciousdesign.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
