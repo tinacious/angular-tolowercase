@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('toLowerCase', [])
+angular.module('td.tolowercase', [])
 .directive('toLowerCase', function () {
     return {
         require: 'ngModel',

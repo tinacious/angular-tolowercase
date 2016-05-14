@@ -73,10 +73,10 @@
 
     </section>
     <script src="bower_components/angular/angular.min.js"></script>
-    <script src="to-lower-case.js"></script>
+    <script src="bower_components/angular-tolowercase/to-lower-case.js"></script>
 
     <script>
-      angular.module('myApp', ['toLowerCase'])
+      angular.module('myApp', ['td.tolowercase'])
         .controller('MainCtrl', function ($scope) {
           $scope.sampleInput = '';
         });
